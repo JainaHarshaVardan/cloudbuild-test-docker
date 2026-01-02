@@ -1,5 +1,5 @@
 steps:
-- name: Step-1:Docker building
+- name: step-1:docker-build
   script: |
     docker build -t asia-south1-docker.pkg.dev/cts03-harshavardan/quickstart-docker-repo/quickstart-image:tag2 .
   automapSubstitutions: true
