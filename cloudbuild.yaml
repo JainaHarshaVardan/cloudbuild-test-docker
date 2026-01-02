@@ -1,10 +1,9 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
+- name: Step-1:Docker building
   script: |
     docker build -t asia-south1-docker.pkg.dev/cts03-harshavardan/quickstart-docker-repo/quickstart-image:tag2 .
   automapSubstitutions: true
-images:
-- 'asia-south1-docker.pkg.dev/cts03-harshavardan/quickstart-docker-repo/quickstart-image:tag2'
+
 logsBucket: 'gs://my-labb-harsha'
 serviceAccount: 'projects/cts03-harshavardan/serviceAccounts/524986309994-compute@developer.gserviceaccount.com'
 options:
